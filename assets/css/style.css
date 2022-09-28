@@ -1,26 +1,55 @@
+/*
+=======================
+:root creats a variable color to make it easier to change a commonly used color through out the webpage.
+=======================
+*/
+
 :root {
     --main: rgb(35 39 42);
     --heading: black;
   }
+
+/*
+=======================
+* customizes to all of parts in the css file
+=======================
+*/
 
   * {
     box-sizing: border-box;
     display:flexbox;
   }
   
+  /*
+=======================
+body customizes the appearance of font, color, background, and position.
+=======================
+*/
+
   body {
     background-color: var(--main);
     font-family: monospace;
     font-size: 16pt;
-    margin: 0;
     position: relative;
     color: white;
   }
 
-  a{
+/*
+=======================
+a customizes the links to not have special affects, and to maintain a white color.
+=======================
+*/
+
+  a {
     text-decoration: none;
     color: white;
   }
+
+/*
+=======================
+nav is to customize the navbar located beneath the portrait
+=======================
+*/
 
   nav {
     text-align: center;
@@ -28,19 +57,31 @@
     min-width: 100%; 
   }
 
+
   nav h1 {
-    font-size: xxx-large;
+    font-size: 45px;
   }
   
-  
+  /*
+=======================
+ul li is to customize the all the items in the lists.
+=======================
+*/
+
   ul li {
     list-style: none;
     text-align: center;
     display: inline-flex;
     flex-wrap: wrap;
-    padding: 1vw;
+    padding: 1;
   }
   
+/*
+=======================
+.card is to customize the text and header above the image on the work cards.
+=======================
+*/
+
   .card {
     padding: 15px;
     flex-wrap: wrap;
@@ -57,35 +98,57 @@
   
   .card img, .work img {
     width: 100%;
-    max-width: 100vh;
-    min-height: 300px;
-    min-width: 300px;
     background-color: var(--main);
   }
+
+/*
+=======================
+.work customizes the images displayed in the work section.
+=======================
+*/
 
   .work {
     padding: 10px;
     display: inline-flexbox;
     flex-grow: 1;
     min-width: 200px;
-    max-width: 32%;
+    max-width: 30%;
     height: max-content;
   }
 
   .work:hover {
     filter: invert();
   }
-  
+ 
+  /*
+=======================
+header customizes the text dispayed above the images.
+=======================
+*/
+
   header {
     padding: 60px;
     text-align: center;
     background: var(--heading);
   }
    
+    /*
+=======================
+.btmText customizes the text shown in the footer.
+=======================
+*/
+
   .btmText {
   text-align: center;
   padding: 0 5%;
   }
+
+
+/*
+=======================
+This portion deals with sizing the webpage when the page is shrinked.
+=======================
+*/
 
   @media screen and (max-width: 992px) {
     .work {
