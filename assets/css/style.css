@@ -1,0 +1,129 @@
+:root {
+    --main: rgb(35 39 42);
+    --heading: black;
+  }
+
+  * {
+    box-sizing: border-box;
+    display:flexbox;
+  }
+  
+  body {
+    background-color: var(--main);
+    font-family: monospace;
+    font-size: 16pt;
+    margin: 0;
+    position: relative;
+    color: white;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  nav {
+    text-align: center;
+    padding: 2px;
+    min-width: 100%; 
+  }
+
+  nav h1 {
+    font-size: xxx-large;
+  }
+  
+  
+  ul li {
+    list-style: none;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 1vw;
+  }
+  
+  .card {
+    padding: 15px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .card header {
+    padding: 20px;
+  }
+  
+  .card p {
+    text-align: left;
+  }
+  
+  .card img, .work img {
+    width: 100%;
+    max-width: 100vh;
+    min-height: 300px;
+    min-width: 300px;
+    background-color: var(--main);
+  }
+
+  .work {
+    padding: 10px;
+    display: inline-flexbox;
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 32%;
+    height: max-content;
+  }
+
+  .work:hover {
+    filter: invert();
+  }
+  
+  header {
+    padding: 60px;
+    text-align: center;
+    background: var(--heading);
+  }
+   
+  .btmText {
+  text-align: center;
+  padding: 0 5%;
+  }
+
+  @media screen and (max-width: 992px) {
+    .work {
+      width: 50%;
+      min-width: 350px;
+      padding: 20px;
+    }
+    .work img {
+      min-height: 350px;
+      width: 50%;
+      min-width: 350px;
+    }
+   
+    header {
+      width: 50%;
+      min-width: 350px;
+  
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    .work {
+      width: 100%;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .work img {
+      min-height: 300px;
+      width: 100%;
+      min-width: 300px;
+    }
+   
+    header {
+      width: 100%;
+      min-width: 300px;
+    }
+    
+  }
+
+  
